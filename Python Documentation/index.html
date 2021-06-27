@@ -1,0 +1,294 @@
+
+<div class="container">
+  <nav id="navbar">
+    <header>Python Documentation</header>
+    
+    <ul>
+    <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+    
+    <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
+    <li><a class="nav-link" href="#Variables">Variables</a></li>
+   
+    <li><a class="nav-link" href="#Data_types">Data types</a></li>
+    <li>
+      <a class="nav-link" href="#if...else_statement">if...else statement</a>
+    </li>
+    <li><a class="nav-link" href="#for_loops">for loops</a></li>
+    <li>
+      <a class="nav-link" href="#Python_Functions"
+        >Python Functions</a
+      >
+    </li>
+    <li><a class="nav-link" href="#Reference">Reference</a></li>
+  </ul>
+  </nav>
+  <main id="main-doc">
+    <section id="Introduction" class="main-section">
+      <header>Introduction</header>
+      <article>
+        <p>
+          Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. Its high-level built in data structures, combined with dynamic typing and dynamic binding, make it very attractive for Rapid Application Development, as well as for use as a scripting or glue language to connect existing components together. Python's simple, easy to learn syntax emphasizes readability and therefore reduces the cost of program maintenance. Python supports modules and packages, which encourages program modularity and code reuse. The Python interpreter and the extensive standard library are available in source or binary form without charge for all major platforms, and can be freely distributed [<a href="https://www.python.org/doc/essays/blurb/">1</a>]. 
+        </p>
+          <p>
+            Not surprisingly, given its accessible and versatile nature, Python is among the top five most popular languages in the world.
+Python is used by Wikipedia, Google (where Van Rossum used to work), Yahoo!, CERN and NASA, among many other organisations. 
+            The language is used in scientific and mathematical computing, and even in AI projects. It’s been successfully embedded in numerous software products, including visual effects compositor Nuke, 3D modellers and animation packages [<a href="https://codeinstitute.net/blog/what-is-python-used-for/">2</a>]. 
+        </p>
+      </article>
+    </section>
+    
+    <section id="Hello_world" class="main-section">
+      <header>Hello world</header>
+      <article>
+        <p>
+          Python is a very simple language, and has a very straightforward syntax. It encourages programmers to program without boilerplate (prepared) code. The simplest directive in Python is the "print" directive - it simply prints out a line (and also includes a newline, unlike in C).
+
+There are two major Python versions, Python 2 and Python 3. Python 2 and 3 are quite different. This tutorial uses Python 3, because it more semantically correct and supports newer features.
+
+For example, one difference between Python 2 and 3 is the print statement. In Python 2, the "print" statement is not a function, and therefore it is invoked without parentheses. However, in Python 3, it is a function, and must be invoked with parentheses [<a href="https://www.learnpython.org/en/Hello,_World!">3</a>].
+          <code>
+            print("This line will be printed.")
+          </code>
+        </p>
+      </article>
+    </section>
+    
+    <section id="Variables" class="main-section">
+      <header>Variables</header>
+      <article>
+        <p>Python has no command for declaring a variable.A variable is created the moment you first assign a value to it. As Example,
+         <code>
+          x = 5 <br>
+          y = "John"
+        </code>
+          
+        </p> 
+       
+        <p>Variables do not need to be declared with any particular type, and can even change type after they have been set. Like this bellow,
+          <code>x = 4       # x is of type int<br>
+x = "Sally" # x is now of type str</code>
+        </p>
+        <p>If you want to specify the data type of a variable, this can be done with casting.<code>
+          x = str(3)    # x will be '3' <br>
+y = int(3)    # y will be 3 <br>
+z = float(3)  # z will be 3.0 
+        </code>
+        </p>
+        <p>
+         You can get the data type of a variable with the type() function.[<a href="https://www.w3schools.com/python/python_variables.asp">4</a>]
+          <code>
+            x = 5<br>
+y = "John"<br>
+print(type(x))<br>
+print(type(y)).
+          </code>
+        </p>
+      </article>
+    </section>
+    
+    <section id="Data_types" class="main-section">
+      <header>Data types</header>
+      <article>
+        <p>
+          Data types are the classification or categorization of data items. It represents the kind of value that tells what operations can be performed on a particular data. Since everything is an object in Python programming, data types are actually classes and variables are instance (object) of these classes.
+          Following are the standard or built-in data type of Python [<a href="https://www.geeksforgeeks.org/python-data-types/">5</a>]: 
+          <ul>
+            <li>
+              Numeric 
+              </li>
+             <li>Sequence Type 
+              </li>
+             <li>Boolean 
+              </li>
+             <li>Set
+              </li>
+             <li>Dictionary 
+ 
+              </li>
+        </ul>
+        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20191023173512/Python-data-structure.jpg" alt="Data types shown in photos" class="center">
+        </p>
+      </article>
+    </section>
+    
+    <section id="if...else_statement" class="main-section">
+      <header>if...else statement</header>
+      <article>
+        <p>
+          Python supports the usual logical conditions from mathematics.These conditions can be used in several ways, most commonly in "if statements" and loops.
+          An "if statement" is written by using the if keyword.
+          The elif keyword is pythons way of saying "if the previous conditions were not true, then try this condition".
+          The else keyword catches anything which isn't caught by the preceding conditions.
+          <code>
+            a = 200<br>
+b = 33<br>
+if b > a:<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;print("b is greater than a")<br>
+elif a > b:<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;print("b is not greater than a")<br>
+            else:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;print("both are equal")
+          </code>
+        </p>
+        
+      </article>
+    </section>
+  <section id="for_loops" class="main-section">
+      <header>for Loops</header>
+      <article>
+        <p>
+          [<a href="https://www.w3schools.com/python/python_for_loops.asp">6</a>] for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).
+
+This is less like the for keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages.
+
+With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc
+        <ul>
+          <li>
+            <strong>Looping Through a String</strong><br><br>
+            Loop through the letters in the word "banana":
+            <code>
+              for x in "banana":<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;print(x)
+            </code>
+          </li>
+          
+          <li>
+            <strong>The break Statement</strong> <br>With the break statement we can stop the loop before it has looped through all the items:<br><br>
+            Exit the loop when x is "banana":
+            <code>
+              fruits = ["apple", "banana", "cherry"]<br>
+for x in fruits:<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;print(x)<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;if x == "banana":<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break
+            </code>
+          </li>
+          
+          <li>
+            <strong>The continue Statement</strong> <br>With the continue statement we can stop the current iteration of the loop, and continue with the next:<br><br>
+            Do not print banana::
+            <code>
+              fruits = ["apple", "banana", "cherry"]<br>
+for x in fruits:<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;if x == "banana":<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;continue<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;print(x)<br>
+            </code>
+          </li>
+          <li>
+            <strong>The range() Function</strong> <br>To loop through a set of code a specified number of times, we can use the range() function,
+
+The range() function returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and ends at a specified number.<br><br>
+            Using the range() function:
+            <code>
+              for x in range(6):<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;print(x)<br>
+
+            </code>
+          </li>
+           <li>
+            <strong>Else in For Loop</strong> <br>The else keyword in a for loop specifies a block of code to be executed when the loop is finished:<br><br>
+            Print all numbers from 0 to 5, and print a message when the loop has ended:
+            <code>
+             for x in range(6):<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;print(x)<br>
+else:<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;print("Finally finished!") <br>
+            </code>
+          </li>
+          <li>
+            <strong>Nested Loops</strong> <br>A nested loop is a loop inside a loop.
+
+The "inner loop" will be executed one time for each iteration of the "outer loop":<br><br>
+            Print all numbers from 0 to 5, and print a message when the loop has ended:
+            <code>
+             adj = ["red", "big", "tasty"]  <br>
+fruits = ["apple", "banana", "cherry"]  <br>
+
+for x in adj: <br>
+  &nbsp;&nbsp;&nbsp;&nbsp;for y in fruits:  <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(x, y) 
+ 
+            </code>
+          </li>
+           <li>
+            <strong>The pass Statement</strong> <br>for loops cannot be empty, but if you for some reason have a for loop with no content, put in the pass statement to avoid getting an error.<br><br>
+           
+            <code>
+             for x in [0, 1, 2]:<br>
+  ;&nbsp;&nbsp;&nbsp;&nbsp; pass
+            </code>
+          </li>
+        </ul>
+        </p>
+      </article>
+    </section>
+   <section id="Python_Functions" class="main-section">
+      <header>Python Functions</header>
+      <article>
+        <p>
+          A function is a block of code which only runs when it is called.
+
+You can pass data, known as parameters, into a function.
+
+A function can return data as a result.In Python a function is defined using the def keyword:
+          <code>
+            def my_function():<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;print("Hello from a function") 
+          </code>
+        </p>
+        <p>To call a function, use the function name followed by parenthesis:
+        <code>
+          def my_function():<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;print("Hello from a function")<br>
+
+my_function()
+        </code></p>
+        <p>
+          Information can be passed into functions as arguments.
+
+Arguments are specified after the function name, inside the parentheses. You can add as many arguments as you want, just separate them with a comma.
+
+The following example has a function with one argument (fname). When the function is called, we pass along a first name, which is used inside the function to print the full name [<a href="https://www.w3schools.com/python/python_functions.asp">7</a>]: 
+          <code>
+            def my_function(fname):<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;print(fname + " Refsnes")<br>
+
+my_function("Emil")<br>
+my_function("Tobias")<br>
+my_function("Linus"
+          </code>
+        </p>
+      </article>
+    </section>
+  <section id="Reference" class="main-section">
+      <header>Reference</header>
+      <article>
+        <ol>
+          <li>
+           <a href="https://www.python.org/doc/essays/blurb/">What is Python? Executive Summary</a>
+          </li>
+           <li>
+           <a href="https://codeinstitute.net/blog/what-is-python-used-for/">What is Python used for?</a>
+          </li>
+           <li>
+           <a href="https://www.learnpython.org/en/Hello,_World!">Hello, World!</a>
+          </li>
+           <li>
+           <a href="https://www.w3schools.com/python/python_variables.asp">Python Variables</a>
+          </li>
+           <li>
+           <a href="https://www.geeksforgeeks.org/python-data-types/">Python Data Types</a>
+          </li>
+           <li>
+           <a href="https://www.w3schools.com/python/python_for_loops.asp">Python For Loops</a>
+          </li>
+           <li>
+           <a href="https://www.w3schools.com/python/python_functions.asp">Python Functions</a>
+          </li>
+        </ol>
+      </article>
+    </section>
+  </main>  
+</div>
+
